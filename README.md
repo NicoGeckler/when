@@ -19,13 +19,13 @@ You can use it from the command line or [uses it online from the browser](https:
 
 * `now`
 * `2 hours ago in yyz`
-* `5pm in yyz -> sfo`
-* `5pm in vienna -> london`
-* `4pm on 17.05.2021 in vienna -> tokyo`
-* `4pm yesterday in vienna -> vienna va`
+* `5pm in yyz to sfo`
+* `5pm in vienna to london`
+* `4pm on 17.05.2021 in vienna to tokyo`
+* `4pm yesterday in vienna to vienna va`
 * `in 4 hours in san francisco`
 * `2pm in 2 days in new delhi`
-* `now in yyz -> sfo -> vie -> lhr`
+* `now in yyz to sfo to vie to lhr`
 * `unix 1639067620 in tokyo`
 
 ## Installation
@@ -52,11 +52,11 @@ in roughly this syntax.  Both locations are optional.  The "local" location alwa
 refers to the current machine's timezone.
 
 ```
-time and date in location -> other location
+time and date in location to other location
 ```
 
 Multiple locations can be suplied by using the arrow operator multiple times.  This
-means you can do things like `now in yyz -> sfo -> vie`.
+means you can do things like `now in yyz to sfo to vie`.
 
 Time and date can be provided roughly like this:
 

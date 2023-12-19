@@ -345,7 +345,7 @@ fn parse_input(expr: &str) -> Result<InputExpr<'_>, DateParseError> {
     for piece in pair.into_inner() {
         match piece.as_rule() {
             Rule::location => {
-                for loc in piece.as_str().split("->") {
+                for loc in piece.as_str().split("to") {
                     let loc = loc.trim();
                     if !loc.is_empty() {
                         rv.locations.push(loc);

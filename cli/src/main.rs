@@ -15,9 +15,9 @@ use libwhen::{get_time_of_day, InputExpr, LocationKind, TimeAtLocation};
 /// in the current location is returned.
 ///
 /// The basic syntax for the expression is "time_spec [in location_spec]".
-/// Translations between locations is done by using the "->" operator.
+/// Translations between locations is done by using the "to" operator.
 ///
-/// For instance "2pm in vie -> yyz" takes 14:00 in vienna time and
+/// For instance "2pm in vie to yyz" takes 14:00 in vienna time and
 /// translates it to toronto (airport).  It then prints out both
 /// timestamps on stdout with additional information.
 ///
